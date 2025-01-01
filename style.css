@@ -1,22 +1,32 @@
-body {
+*{
+    /* outline: 2px solid red; */
+}
+
+body{
     height: 100vh;
-    margin: 0;
-    overflow: hidden;
+    margin: 0;  
     font-family: Roboto;
     display: flex;
     flex-direction: column;
 }
 
+.master{
+    display: flex;
+    flex-direction: column;
+}
+
+/* TOP OF THE WEBSITE */
 .top{
     background-color: #1F2937;    
 }
 
-.header{
+.top>.header{
     width: 75%;
+    height: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
+    margin: 10px auto 10px auto;
     gap:16px;
 }
 
@@ -43,12 +53,13 @@ ul{
     list-style-type: none;
 }
 
-.content-1{
+.content{
     width: 75%;
-    height:320px;
+    height:260px;
     display: flex;
     justify-content: space-between;
     margin:0 auto;
+    margin-bottom: 50px;
     gap: 20px;
     padding: 20px 0;
 }
@@ -86,3 +97,75 @@ ul{
     
 }
 
+/* SECOND SECTION OF THE WEBSITE */
+
+.info{
+    background-color:hsl(90, 17%, 98%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    height:260px;
+    
+}
+
+.info>.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.content-2{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    gap: 8px;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-style:double;
+    border-color: #3b82f6;
+    border-radius: 8px;
+}
+
+/* THIRD SECTION OF THE WEBSITE */
+
+.quote{
+    min-height: 270px;
+    height: fit-content;
+    background-color:#e5e7eb;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+   
+}
+
+.stuff{
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+    margin: 20px 90px 20px 90px;
+    padding: 0 90px 0 90px;
+    
+}
+
+.author{
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 90px 10px 90px;
+    padding: 0 90px 0 90px;
+}
