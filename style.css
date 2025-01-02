@@ -1,13 +1,10 @@
-*{
-    /* outline: 2px solid red; */
-}
-
 body{
     height: 100vh;
     margin: 0;  
     font-family: Roboto;
     display: flex;
     flex-direction: column;
+    background-color: #1F2937
 }
 
 .master{
@@ -16,9 +13,6 @@ body{
 }
 
 /* TOP OF THE WEBSITE */
-.top{
-    background-color: #1F2937;    
-}
 
 .top>.header{
     width: 75%;
@@ -30,14 +24,14 @@ body{
     gap:16px;
 }
 
-.left{
+.header>.left{
     padding: 0;
     font-size: 24px;
     color: #F9FAF8;
     
 }
 
-.right{
+.header>.right{
     display: flex;
     padding: 0;
     gap: 18px;
@@ -55,7 +49,8 @@ ul{
 
 .content{
     width: 75%;
-    height:260px;
+    min-height:260px;
+    height: fit-content;
     display: flex;
     justify-content: space-between;
     margin:0 auto;
@@ -105,7 +100,8 @@ ul{
     display: flex;
     flex-direction: column;
     padding: 25px;
-    height:260px;
+    min-height: 270px;
+    height: fit-content;
     
 }
 
@@ -117,18 +113,18 @@ ul{
 }
 .content-2{
     display: flex;
-    width: 75%;
-    justify-content: space-between;
+    width: 70%;
+    justify-content: space-around;
     align-items: center;
     margin: auto;
-    gap: 8px;
+    flex-wrap:wrap;
 }
 
 .image{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    width:min-content;
 }
 
 img{
@@ -142,13 +138,13 @@ img{
 /* THIRD SECTION OF THE WEBSITE */
 
 .quote{
-    min-height: 270px;
-    height: fit-content;
     background-color:#e5e7eb;
+    min-height: 270px;
+    height: fit-content; 
     display: flex;
     flex-direction: column;
     padding: 25px;
-   
+    justify-content: center;
 }
 
 .stuff{
@@ -168,4 +164,55 @@ img{
     justify-content: flex-end;
     margin: 0 90px 10px 90px;
     padding: 0 90px 0 90px;
+}
+
+/* FOURTH SECTION OF THE WEBSITE */
+
+.bottom{
+    height: fit-content;  
+    display: flex;
+    flex-direction: column;    
+}
+
+.content-3{
+    background-color:white;
+    min-height: 260px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    padding: 25px;
+    flex-wrap: wrap;
+    
+    
+}
+
+.feedback{
+    background-color: #3882F6;
+    color: #e5e7eb;
+    min-height: 150px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 250px 0;
+    border-radius: 10px;
+    border-width: 0;
+    gap: 16px;
+    
+}
+
+.feedback>.left{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px; 
+}
+
+
+.footer{
+    background-color: #1F2937;
+    color: #e5e7eb;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
